@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chollerton Tearooms</title>
+	<link rel="stylesheet" href="new.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body> 
+<header class="header">
+    
+    <nav> 
+        <a href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/HOME.html"> <img src="Graphics/logo-mixed.png" alt="Main logo"> </a>
+        <div class="nav-links" id="navLinks">
+
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li> <a href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/HOME.html"> HOME </a></li>
+                <li> <a href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/FINDOUTMORE.html"> FIND OUT MORE </a></li>
+                <li> <a href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/VIEWREQUESTS.php"> VIEW REQUESTS </a></li>
+                <li> <a href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/CREDITS.html"> CREDITS </a></li>
+            </ul>
+        </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<!------ text overlay ------>
+    <div class="text-box">
+    <h1>CREDITS</h1>
+        <p>Please find appropriate citations to the material utilised throughout the creation of this website.</p>
+    </div>
+    </header>
+<!------   main area ------>
+    <main>
+    <h2> CREADTED BY:</h2>
+         <p class="contrast-4">Jenson Connor, w21012510, w21012510@northumbria.ac.uk</p>
+    
+        <h2> SECURITY CONSIDERATIONS</h2>
+        <p class="contrast-4">During the creation of any website, it is critical to consider any potential security risks which may be presented on both the user and company sides. As stated by Bassi, 2023, a few things to be wary of are: the maintenance of software, SQL injection, Cross Site Scripting, error messages, data validation and vulnerabilities. All of the stated factors to consider are key areas in which hackers can exploit code and gain access to potentially sensetive information.</p>
+        
+        <p class="contrast-4"> According to the Canadian Centre for Cyber Security, 2022, a few methods to avoid exploitation and hacking is to: consider a secure software architecture, this can be done by seggregating web service components, protecting internet facing web services and isolating administrative interfaces. Furthermore, it is key to consider appropriate access limitation, authentication methods, ensure the use of secure sessions, input validation and secure configuration and operations.</p>
+        
+        <h2>REFERENCES</h2>
+        <p class="contrast-4">Bassi, K. (no date) 8 simple ways to improve your website security, CommonPlaces. Available at: https://www.commonplaces.com/blog/8-simple-ways-to-improve-your-website-security/ (Accessed: 23 May 2023).</p>
+        <p class="contrast-4">Canadian Centre for Cyber Security (2022) Security considerations for your website (ITSM.60.005), Canadian Centre for Cyber Security. Available at: https://www.cyber.gc.ca/en/guidance/security-considerations-your-website-itsm60005 (Accessed: 23 May 2023). </p>
+        <p class="contrast-4">Website security consideration (no date) Tutorials Point. Available at: https://www.tutorialspoint.com/internet_technologies/website_security.htm (Accessed: 23 May 2023). </p>
+        <p class="contrast-4">All images and graphics used throughout this website were acquired from open-source websites. All logos were created by myself using Adobe Express.</p>
+        
+    </main>
+<!------- footer ------->
+<section class="footer">
+<a class="title" href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/HOME.html"><h4> CHOLLERTON TEAROOMS</h4></a>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-google-plus"></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-share-square-o"></i>
+    </div>
+        <p class="contrast"> <i class="fa fa-copyright"></i> All rights reserved to Chollerton Tearooms 2023.</p>
+</section>
+    
+<!------ JavaScript for toggle menu -----> 
+        <script>
+        var navLinks = document.getElementById("navLinks");
+        
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    
+</body>
+</html>

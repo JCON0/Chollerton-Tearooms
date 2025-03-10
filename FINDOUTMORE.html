@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chollerton Tearooms</title>
+	<link rel="stylesheet" href="new.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body> 
+<header class="header">
+    <nav> 
+        <a href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/HOME.html"> <img src="Graphics/logo-mixed.png" alt="Main logo"> </a>
+        <div class="nav-links" id="navLinks">
+
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li> <a href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/HOME.html"> HOME </a></li>
+                <li> <a href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/FINDOUTMORE.html"> FIND OUT MORE </a></li>
+                <li> <a href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/VIEWREQUESTS.php"> VIEW REQUESTS </a></li>
+                <li> <a href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/CREDITS.html"> CREDITS </a></li>
+            </ul>
+        </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
+    
+    <div class="text-box-one">
+        <h1> CONTACT US</h1>
+            <p>Do you wish to find out more about Chollerton Tearooms?</p>
+            <p>Fill in our form below, and we will be in touch shortly.</p>
+        </div>
+    
+</header>
+<main>
+    <h2>Contact Form</h2>
+    <h5 class="contrast-3">PLEASE FILL IN ALL FIELDS</h5>
+<form class="contact-form" action="VIEWREQUESTS.php" method="get">
+    
+    <fieldset>
+        <legend><b> Contact Information </b> </legend>
+        <div class="formGrid">
+            Forename
+            <input type="text" name="forename" accesskey='f' required> <br>
+            Surname
+            <input type="text" name="surname" accesskey='s' required> <br>
+            Mobile number
+            <input type="tel" name="mobileTelNo" accesskey='#'> <br> 
+            Email address
+            <input type="email" name="email" accesskey='e' required> <br>
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend> <b> Postal Address </b> </legend>
+        <div class="formGrid">
+            Full Address (Number, Street, City, Postcode)
+            <input type="text" name="postalAddress" accesskey='a' required> <br>
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend> <b>Facility </b></legend>
+        Which facility are you interested in? <br>
+        <select class="select" name="facility" accesskey='z' required> 
+            <option value="c5">Bed and Breakfast</option>
+            <option value="c2">Craft Shop</option>
+            <option value="c4">Post Office</option>
+            <option value="c1">Tearoom</option>
+            <option value="c3">Village Store</option>
+        </select>
+    </fieldset>
+    
+    <fieldset >
+        <legend> <b>Contact Preference </b></legend>
+        How would you like us to contact you? <br>
+            <select class="select" name="sendMethod" accesskey='x' required>
+                <option value="post">Post</option>
+                <option value="email">Email</option>
+            </select>
+    </fieldset>
+    
+    <input class="submit" type="submit" value="Submit" accesskey='c'>
+</form>
+</main>
+<!------- footer ------->
+<section class="footer">
+<a class="title" href="http://unn-w21012510.newnumyspace.co.uk/Chollerton/HOME.html"><h4> CHOLLERTON TEAROOMS</h4></a>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-google-plus"></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-share-square-o"></i>
+    </div>
+        <p class="contrast"> <i class="fa fa-copyright"></i> All rights reserved to Chollerton Tearooms 2023.</p>
+</section>
+    
+<!------ JavaScript for toggle menu -----> 
+        <script>
+        var navLinks = document.getElementById("navLinks");
+        
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+</body>
+</html>
